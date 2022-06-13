@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+
+<body id="body" class="body">
+    <script>
+        let mixedObj = {
+            "users": [{
+                "id": 1,
+                "fname": "John",
+                "lname": "Tucker",
+                "age": 34,
+                "job": "mechanic"
+            },
+            {
+                "id": 2,
+                "fname": "Diego",
+                "lname": "Alvares",
+                "age": 51,
+                "job": "writer"
+            },
+            {
+                "id": 3,
+                "fname": "Terrence",
+                "lname": "Trent",
+                "age": "122",
+                "job": "accountant"
+            },
+            {
+                "id": 4,
+                "fname": "Tom",
+                "lname": "Mcintosh",
+                "age": 41,
+                "job": "clerk"
+            },
+            {
+                "id": 5,
+                "fname": "Linda",
+                "lname": "Christensen",
+                "age": "49",
+                "job": "chef/writer"
+            },
+            {
+                "id": 6,
+                "fname": "Mariann",
+                "lname": "Fazekas",
+                "age": "45",
+                "job": "manager"
+            },
+            {
+                "id": 7,
+                "fname": "Tim",
+                "lname": "Thousand",
+                "age": "24",
+                "job": "student"
+            }
+            ],
+            "comments": [
+                {
+                    "commenter_id": 2,
+                    "comment": "This shop is great!"
+                }
+            ]
+        }
+        // for (let k in mixedObj) {
+        //     for (let j in mixedObj[k]) {
+        //         for (let n in mixedObj[k][j]) {
+
+        //             console.log(mixedObj[k][j][n]);
+        //         }
+
+        //     }
+        // }
+        for (let k of Object.values(mixedObj)) {
+            // (7)[{… }, {… }, {… }, {… }, {… }, {… }, {… }]0: { id: 1, fname: 'John', lname: 'Tucker', age: 34, job: 'mechanic' } 1: { id: 2, fname: 'Diego', lname: 'Alvares', age: 51, job: 'writer' } 2: { id: 3, fname: 'Terrence', lname: 'Trent', age: '122', job: 'accountant' } 3: { id: 4, fname: 'Tom', lname: 'Mcintosh', age: 41, job: 'clerk' } 4: { id: 5, fname: 'Linda', lname: 'Christensen', age: '49', job: 'chef/writer' } 5: { id: 6, fname: 'Mariann', lname: 'Fazekas', age: '45', job: 'manager' } 6: { id: 7, fname: 'Tim', lname: 'Thousand', age: '24', job: 'student' } length: 7[[Prototype]]: Array(0)
+            // arrayAndObjectLoop.html: 81
+            for (let n of k) {
+                //{id: 1, fname: 'John', lname: 'Tucker', age: 34, job: 'mechanic'}
+                //{id: 2, fname: 'Diego', lname: 'Alvares', age: 51, job: 'writer'}
+                //{id: 3, fname: 'Terrence', lname: 'Trent', age: '122', job: 'accountant'}
+                //{id: 4, fname: 'Tom', lname: 'Mcintosh', age: 41, job: 'clerk'}
+                //{id: 5, fname: 'Linda', lname: 'Christensen', age: '49', job: 'chef/writer'}
+                //{id: 6, fname: 'Mariann', lname: 'Fazekas', age: '45', job: 'manager'}
+                //{id: 7, fname: 'Tim', lname: 'Thousand', age: '24', job: 'student'}
+                //{commenter_id: 2, comment: 'This shop is great!'}
+                for (let j of Object.values(n)) {
+                    // 1
+                    // John
+                    // Tucker
+                    // 34
+                    // mechanic
+                    console.log(j);
+                }
+
+            }
+        }
+        console.log(isNaN(25));
+        const getName = user => user.name;
+        console.log(getName({ name: 'Beni'}));
+    </script>
+</body>
+
+</html>

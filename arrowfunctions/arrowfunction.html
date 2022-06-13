@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARROW FUNCTION EXERCISE</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </link>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 bg-info vh-100 d-flex justify-content-center text-white text-bold">
+                <ul class="ulClass ">
+                    <li class="liClass">Phones</li>
+                    <li class="liClass" data-price=149.990,>Apple Iphone SE 2022 </li>
+                    <li class="liClass" data-price=189.990,>Apple Iphone 11 64Gb</li>
+                    <li class="liClass" data-price=209.990,12>Apple Iphone 11 128Gb </li>
+                    <li class="liClass" data-price=159.990,12>OnePlus Nord ++ 128Gb </li>
+                    <li class="liClass" data-price=229.990,>Apple Iphone 12 64Gb </li>
+                    <li class="liClass" data-price=329.990,>Samsung S21 Ultra 128Gb </li>
+                    <li class="liClass" data-price=249.990,75>Apple Iphone 12 128Gb </li>
+                    <li class="liClass" data-price=239.990,456>Apple Iphone 13 64Gb </li>
+                    <li class="liClass" data-price=176.990,456>Oppo X 256Gb </li>
+                    <li class="liClass" data-price=269.990>Apple Iphone 13 128Gb </li>
+                    <li class="liClass" data-price=47.990,>Apple pen 2.</li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <script>
+let dataLiAll=Array.from(document.querySelectorAll(".ulClass li[data-price]"))
+    .filter(value => value.textContent.includes('Apple'))
+    .map(value=> Math.round(value.dataset.price.replace('.','').replace(',','.')))
+    .reduce((total,value)=> total+=value);
+console.log(dataLiAll);
+    </script>
+</body>
+
+</html>

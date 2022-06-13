@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fname": "John",
+      "lname": "Tucker",
+      "age": 34,
+      "job": "mechanic"
+    },
+    {
+      "id": 2,
+      "fname": "Diego",
+      "lname": "Alvares",
+      "age": 51,
+      "job": "writer"
+    },
+    {
+      "id": 3,
+      "fname": "Terrence",
+      "lname": "Trent",
+      "age": "122",
+      "job": "accountant"
+    },
+    {
+      "id": 4,
+      "fname": "Tom",
+      "lname": "Mcintosh",
+      "age": 41,
+      "job": "clerk"
+    },
+    {
+      "id": 5,
+      "fname": "Linda",
+      "lname": "Christensen",
+      "age": "49",
+      "job": "chef/writer"
+    },
+    {
+      "fname": "Mariann",
+      "lname": "Fazekas",
+      "age": "45",
+      "job": "manager",
+      "id": 6
+    },
+    {
+      "fname": "Tim",
+      "lname": "Thousand",
+      "age": "24",
+      "job": "student",
+      "id": 7
+    },
+    {
+      "fname": "Attila",
+      "lname": "Biró",
+      "age": "48",
+      "job": "freelancer",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "fname": "Joanna",
+      "lname": "Ryan",
+      "age": 29,
+      "job": "librarian"
+    }
+  ],
+  "comments": [
+    {
+      "commenter_id": 2,
+      "comment": "This shop is great!"
+    }
+  ]
+}

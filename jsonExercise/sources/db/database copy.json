@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fname": "John",
+      "lname": "Tucker",
+      "age": 34,
+      "job": "mechanic"
+    },
+    {
+      "id": 2,
+      "fname": "Diego",
+      "lname": "Alvares",
+      "age": 51,
+      "job": "writer"
+    },
+    {
+      "id": 3,
+      "fname": "Terrence",
+      "lname": "Lindel",
+      "age": 22,
+      "job": "bookkeeper"
+    },
+    {
+      "id": 4,
+      "fname": "Tom",
+      "lname": "Mcintosh",
+      "age": 41,
+      "job": "clerk"
+    },
+    {
+      "id": 5,
+      "fname": "Linda",
+      "lname": "Christensen",
+      "age": "49",
+      "job": "chef/writer"
+    }
+  ],
+  "comments": [
+    {
+      "commenter_id": 2,
+      "comment": "This shop is great!"
+    }
+  ]
+}
