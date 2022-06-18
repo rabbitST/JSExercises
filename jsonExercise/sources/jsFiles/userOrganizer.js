@@ -147,3 +147,4 @@ function createNewUser(callerTag) {
 }
 let buttonShowData = document.querySelector("#showData");
 buttonShowData.addEventListener('click', getJsonDB);
+
